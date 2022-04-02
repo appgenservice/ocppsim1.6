@@ -13,6 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 public class SimulatorController {
 
+
     private final OCPPService ocppService;
 
     @PutMapping("/status/{socketId}/{status}")
