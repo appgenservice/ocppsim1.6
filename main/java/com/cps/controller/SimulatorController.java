@@ -20,6 +20,7 @@ public class SimulatorController {
         ocppService.changeStatus(socketId, status);
     }
 
+
     @PostMapping("/rfid/start/{socketId}/{idTag}")
     public void addSocket(@PathVariable("socketId") String socketId, @PathVariable("idTag") String idTag)  {
         ocppService.startRFIDCharging(socketId, idTag);
